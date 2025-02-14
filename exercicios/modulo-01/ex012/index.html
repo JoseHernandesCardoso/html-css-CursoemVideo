@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Vídeos</title>
+</head>
+<body>
+    <h1>Adicionando vídeos com HTML</h1>
+    <hr>
+    
+    <h2>Inserindo vídeos locais</h2>
+    <p>Aqui em baixo está um vídeo salvo localmente em até 2 formatos diferentes e com capa personalisada.</p>
+    <video width='600' poster='midia/morango-thumb.jpg' controls loop>
+        <source src='midia/video-morango.mp4' type="video/mp4">
+        <source src='midia/video-morango.webm' type='video/webm'>
+        <p>Seu navegador não conseguiu carregar o vídeo.</p>
+    </video>
+
+    <h2>Inserindo vídeos do Youtube</h2>
+    <p>Aqui em baixo está um vídeo adicionado diretamente pela função <strong>Incorporar</strong> do Youtube.</p>
+    <p><a href="https://www.youtube.com/watch?v=wgiRK8_iKdg" target="_blank">Vídeo original</a> por <a href="https://www.youtube.com/@pwnisher" target="_blank">pwnisher</a>.</p>
+
+    <iframe width="600" height="337" src="https://www.youtube.com/embed/wgiRK8_iKdg?si=X8kOaoBzXSJRAAxV&amp;start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
