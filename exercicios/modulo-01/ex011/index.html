@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Usando mídias em HTML5</h1>
+    <hr>
+
+    <h2>Imagens flexíveis</h2>
+    <p>Tente mudar o tamanho da janela ou abrir o site em outro dispositivo. A imagem abaixo irá se adaptar ao tamanho da tela.</p>
+    <picture>
+        <source media="(max-width: 720px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1020px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="A imagem flexível funciona">
+    </picture>
+
+    <h2>Uasando áudios</h2>
+    <p>De play no player abaixo para escutar o Guanacast nº33 que fala um pouco sobre a história da computação. O arquivo pode ser carregado em até 3 formatos diferentes, mas se seu navegador não suportar nenhum deles, você ainda pode <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">baixá-lo em MP3</a></p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    </audio>
+</body>
+</html>
